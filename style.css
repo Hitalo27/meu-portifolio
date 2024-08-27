@@ -105,6 +105,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.apresentacao__links__link:hover {
+    background-color: #22D4FD;
+    color: floralwhite;
+}
+
 .apresentacao__experiencia__links__link{
     background-color: #22D4FD;
     width: 880px;
@@ -117,5 +122,9 @@ body {
     text-decoration: none;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
+}
 
+.apresentacao__experiencia__links__link:hover {
+    background-color: #22D4FD;
+    color: floralwhite;
 }
