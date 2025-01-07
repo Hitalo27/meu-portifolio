@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url(styles/reader.css);
+
 
 *{
     margin: 0;
@@ -17,6 +19,7 @@ body {
     box-sizing: border-box;
     background-color: #000000;
     color: #ffffff;
+    padding: 70px;
     /* overflow: hidden; */
 }
 
@@ -127,4 +130,58 @@ body {
 .apresentacao__experiencia__links__link:hover {
     background-color: #22D4FD;
     color: floralwhite;
+}
+
+.bg-dark-futuristic {
+    background: rgba(0, 0, 0, 0.8); 
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2); 
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.2); 
+    transition: background 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #00ffff; 
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff00ff;
+    text-shadow: 0px 0px 8px #ff00ff;
+}
+
+.navbar-brand {
+    color: #00ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 8px #00ffff;
+}
+
+.navbar-brand:hover {
+    color: #ff00ff;
+    text-shadow: 0px 0px 12px #ff00ff;
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: linear-gradient(45deg, #00ffff, #ff00ff);
+}
+
+.musica {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.musica:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #ff00ff, 0px 0px 20px #00ffff;
 }

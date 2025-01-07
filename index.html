@@ -8,11 +8,39 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-futuristic fixed-top">
+        <a class="navbar-brand" href="#">Hitalo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#resumo">Resumo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiencias">Experiências</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formacao">Formação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#linguagens">Linguagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
     <h1 class="apresentacao__conteudo_titulo">Portfólio</h1>
-    <main class="apresentacao">
+    <main class="apresentacao" id="resumo">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__titulo">Resumo</h1>
             <p class="apresentacao__conteudo_texto">Olá! Sou Hitalo Silveira Porto tenho 22 anos, sou de Contagem - MG, atualmente estudo Engenharia de
@@ -35,7 +63,7 @@
         <img src="hit.jpg" alt="Foto do Hitalo Silveira">
     </main>
 
-    <h1 class="titulo__experiencia">Experiências Profissionais</h1>
+    <h1 class="titulo__experiencia" id="experiencias">Experiências Profissionais</h1>
 
     <main class="apresentacao__experiencia">
         <h2 class="apresentacao__experiencia__data">05/2023 - Até a presente data</h2>
@@ -109,7 +137,7 @@
     </main>
 
 
-    <main class="apresentacao__experiencia">
+    <main class="apresentacao__experiencia" id="formacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__titulo"> Formação Academica</h1>
             <p class="apresentacao__experiencia__texto"> Cursando Graduação em Engenharia de Software – Previsão de Conclusão em Dezembro/2025 Pontifícia Universidade Católica de Minas Gerais - PUC MG (Noturno)
@@ -126,7 +154,7 @@
         </section>
     </main>
 
-    <main class="apresentacao__experiencia">
+    <main class="apresentacao__experiencia" id="linguagens">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__titulo"> Linguagens de Programação</h1>
             <p class="apresentacao__experiencia__texto">Mais afinidades: Spring Boot e React</p>
@@ -134,6 +162,18 @@
         </section>
     </main>
 
+    <main class="apresentacao__experiencia" id="contato">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__titulo"> Contato</h1>
+            <p class="apresentacao__experiencia__texto"><Strong>Email:</Strong> hitaloporto1@gmail.com</p>
+            <p class="apresentacao__experiencia__texto"><Strong>Linkedin:</Strong> Hitalo Silveira </p>
+        </section>
+    </main>
+
+    <div class="apresentacao__links">
+        <button class="musica" id="btn-musica">Tocar Música Favorita</button>
+        <audio id="audio-musica" src="musica.mp3"></audio>
+    </div>
 
     <br>
 
